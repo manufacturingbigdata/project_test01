@@ -1,20 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: springboot_ui
+  name: hello-deployment
+  labels:
+    app: hello
 spec:
   replicas: 1
-  revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: springboot-ui
+      app: hello
   template:
     metadata:
       labels:
-        app: springboot-ui
+        app: hello
     spec:
       containers:
-      - image: docker.io/manufacturingbigdata/spring-demo
-        name: springboot-ui
-        ports:
-        - containerPort: 8080
+        - name: hello
+          image: manufacturingbigdata/spring-demo:latest
+          ports:
+            - containerPort: 8080
