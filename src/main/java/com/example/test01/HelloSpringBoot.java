@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloSpringBoot {
     @ResponseBody
     @RequestMapping("/")
-    public String hello(){
-        return "Hello Spring Boot!!!";
+    public String hello() {
+        return "Hello Spring Boot spring branch!!";
     }
 }
