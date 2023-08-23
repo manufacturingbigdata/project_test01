@@ -12,4 +12,4 @@ spec:
       port: 8080
       targetPort: 8080
       nodePort: 30000
-  externalName: hello-spring.springdemo.svc.cluster.local
+  #externalName: hello-spring.springdemo.svc.cluster.local
