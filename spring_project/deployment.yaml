@@ -19,4 +19,4 @@ spec:
           image: manufacturingbigdata/spring-demo:latest
           ports:
             - containerPort: 8080
-      nodeName: ubun20-01
+      nodeName: ubun20-02
