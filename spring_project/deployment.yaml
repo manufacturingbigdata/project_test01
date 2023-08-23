@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: hello-deployment
   labels:
-    app: hello
+    app: hello-spring
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello
+      app: hello-spring
   template:
     metadata:
       labels:
-        app: hello
+        app: hello-spring
     spec:
       containers:
-        - name: hello
+        - name: hello-spring
           image: manufacturingbigdata/spring-demo:latest
           ports:
             - containerPort: 8080
