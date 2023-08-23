@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-spring
+  namespace : springdemo
 spec:
   type: NodePort
   selector:
@@ -11,3 +12,4 @@ spec:
       port: 8080
       targetPort: 8080
       nodePort: 30000
+  externalName: hello-spring.springdemo.svc.cluster.local

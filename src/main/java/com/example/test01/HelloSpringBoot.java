@@ -22,7 +22,7 @@ public class HelloSpringBoot {
     @RequestMapping("/rest_call")
     public String rest_call() throws Exception{
         //호출 할 Flask의 URL 설정
-        HttpPost httpPost = new HttpPost("http://192.168.91.101:3001");
+        HttpPost httpPost = new HttpPost("http://192.168.91.101:30001");
         //Flask 에 접속해서 실행 결과를 가져올 객체 생성
         CloseableHttpClient httpclient = HttpClients.createDefault();
         //Flask에 접속해서 실행 결과를 가져옴
