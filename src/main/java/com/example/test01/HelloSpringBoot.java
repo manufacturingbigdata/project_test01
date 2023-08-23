@@ -16,7 +16,7 @@ public class HelloSpringBoot {
     @ResponseBody
     @RequestMapping("/")
     public String hello() {
-        return "Hello Spring Boot spring branch!!";
+        return "Hello Spring Boot spring branch good!!!!";
     }
     @ResponseBody
     @RequestMapping("/rest_call")
